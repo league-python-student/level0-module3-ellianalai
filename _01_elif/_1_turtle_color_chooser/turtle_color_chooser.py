@@ -15,6 +15,12 @@ if __name__ == '__main__':
     window.bgcolor('white')
 
     # TODO 1) Create a new Turtle
+    ellie = turtle.Turtle()
+    ellie.pencolor('pink')
+    ellie.pensize(3)
+    for i in range(4):
+        ellie.forward(100)
+        ellie.right(90)
     #      2) Make the turtle draw a shape (this will take more than one line
     #         of code)
     #      3) Set the pen width to 10
