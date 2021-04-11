@@ -16,11 +16,28 @@ if __name__ == '__main__':
 
     # TODO 1) Create a new Turtle
     ellie = turtle.Turtle()
-    ellie.pencolor('pink')
-    ellie.pensize(3)
-    for i in range(4):
-        ellie.forward(100)
-        ellie.right(90)
+
+
+    for i in range(6):
+        colorChooser= simpledialog.askstring(title = '', prompt = 'What color pen would you like to draw with?')
+        if colorChooser == 'red':
+            ellie.pencolor('red')
+        if colorChooser == 'orange':
+            ellie.pencolor('orange')
+        if colorChooser == 'yellow':
+            ellie.pencolor('yellow')
+        if colorChooser == 'green':
+            ellie.pencolor('green')
+        if colorChooser == 'blue':
+            ellie.pencolor('blue')
+        if colorChooser == 'purple':
+            ellie.pencolor('purple')
+        ellie.pensize(10)
+        for i in range(4):
+            ellie.forward(100)
+            ellie.right(90)
+
+
     #      2) Make the turtle draw a shape (this will take more than one line
     #         of code)
     #      3) Set the pen width to 10
